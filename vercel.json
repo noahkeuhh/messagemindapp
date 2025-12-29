@@ -1,5 +1,5 @@
 {
-  "name": "messagemind",
+  "name": "messagemind-app",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "devCommand": "npm run dev",
