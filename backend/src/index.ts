@@ -31,6 +31,15 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }));
 // Routes
 app.use('/api', routes);
 
+// Root health/info route
+app.get('/', (req, res) => {
+  res.json({
+    status: 'ok',
+    message: 'Backend running',
+    health: '/api/health',
+  });
+});
+
 // Error handling middleware
 app.use((err: any, req: express.Request, res: express.Response, next: express.NextFunction) => {
   console.error('Unhandled error:', err);
