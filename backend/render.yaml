@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: messagemind-api
+    runtime: node
+    startCommand: npm start
+    buildCommand: npm run build
+    envVars:
+      - key: NODE_ENV
+        value: production
