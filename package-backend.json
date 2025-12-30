@@ -1,0 +1,12 @@
+{
+  "name": "messagemind",
+  "private": true,
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd backend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
